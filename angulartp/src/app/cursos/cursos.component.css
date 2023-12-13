@@ -1,0 +1,40 @@
+.card-header{
+    background-color: rgba(9, 79, 126, 0.514);
+    color: white;
+}
+.card {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    display: flex;  
+    flex-direction: column;  
+    align-items: auto; 
+}
+
+.cerrar{
+    width: 10px;
+    margin-left: 0%;
+
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tituloform {
+    margin: 3px;
+}
+
+.input{
+    margin-bottom: 2px;
+}

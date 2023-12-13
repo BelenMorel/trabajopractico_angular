@@ -1,0 +1,43 @@
+<div class="cursos">
+    <div *ngFor="let curso of cursos; let i = index">
+      <div class="card">
+        <div class="card-body">
+          <div class="contadorcursos">{{ i + 1 }}</div>
+          <h4>Curso de: {{ curso.titulo }}</h4>
+          <p>ID: {{ curso.id }}</p>
+          <p>Descripción: {{ curso.descripcion }}</p>
+          <p>Duración: {{ curso.duracion }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <button class="btn btn-primary" (click)="mostrarCard()">
+      Agregar un curso
+    </button>
+  </div>
+
+<div class="card" [hidden]="!esVisible">
+    <h3>Agregar curso</h3>
+    <form (submit)="agregarCurso()">
+        <label for="text">Nombre del curso:</label>
+        <input type="text" id="text" class="form-control" placeholder="Ingrese en nombre del curso" [(ngModel)]="titulo">
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" class="form-control" placeholder="Ingrese el ID" [(ngModel)]="id">
+
+        <label for="descripción">Descripción del curso:</label>
+        <input type="text" id="descripción" class="form-control" placeholder="Ingrese una descripción" [(ngModel)]="descripcion">
+
+        <label for="duracion">Duración del curso:</label>
+        <input type="text" id="duracion" class="form-control" placeholder="Ingrese la duración" [(ngModel)]="duracion">
+
+        <div class="botones">
+            <button type="submit" class="btn btn-primary m-2">
+                Agregar curso
+            </button>
+            <button type="button" class="btn btn-danger m-2" (click)="ocultarCard()">
+                Cerrar
+            </button>
+        </div>
+    </form>
+</div>
