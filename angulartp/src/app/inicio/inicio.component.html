@@ -1,23 +1,63 @@
 
+
 <div class="card text-center">
     <div class="card-header ">
-        <h2>¿Por qué es importante aprender diferentes idiomas?</h2>
+        <h1>Cursos de Idiomas</h1>
     </div>
     <div class="card-body">
       
-      <p class="card-text m-3 text-center">Conocer otro idioma nos permite relacionarnos con personas de otros países, 
-        nos da la posibilidad de vivir, estudiar o trabajar en el extranjero, además agiliza la memoria 
-        y concentración, entre más idiomas vamos adquiriendo más habilidades de aprendizaje desarrollamos.</p>
-      <a routerLink="cursos" class="btn btn-primary">Ver Cursos</a>
+      <p class="card-text m-3 ">Estamos encantados de ser tu destino central para descubrir cursos
+         de idiomas de alta calidad ofrecidos por expertos de todo el mundo. Te conectamos con una amplia variedad 
+         de cursos diseñados para satisfacer tus necesidades y objetivos de aprendizaje.</p>
+         <p>Nuestra misión es facilitar el acceso a cursos de idiomas excepcionales, 
+          proporcionando una plataforma donde puedas explorar, comparar y elegir los cursos que mejor se adapten a 
+          tus necesidades. Trabajamos con instructores y organizaciones de renombre para ofrecerte una selección 
+          diversa y enriquecedora.</p>
     </div>
     
 </div>
 
-<div class="card text-center" >
-  
-  <div class="card-body">
-    <h3></h3>
-    <p class="card-text m-3 text-center"></p>
-  </div>
-  
+<div class="container mt-5">
+  <h3 class="text-center mb-3">¿Por qué es importante aprender otros idiomas?</h3>
+  <p class="text-justify">
+    Aprender inglés es esencial en el mundo actual por diversas razones. Este idioma se ha convertido en la lengua 
+    franca global, facilitando la comunicación entre personas de diferentes culturas y nacionalidades. Además de ser 
+    una herramienta vital en el ámbito laboral, donde muchas empresas valoran la fluidez en inglés, también abre 
+    puertas en el ámbito académico, permitiendo acceder a programas de estudio internacionales.
+
+    El inglés no solo es práctico, sino que también proporciona acceso a una amplia gama de recursos en Internet, 
+    desde información y contenido educativo hasta entretenimiento y cultura pop. Además, dominar este idioma 
+    simplifica los viajes y el turismo, ya que el inglés es comúnmente utilizado en el sector.
+
+    Culturalmente, aprender inglés amplía las posibilidades de disfrutar de películas, música, libros y otras 
+    expresiones culturales de manera más directa. Conectar con hablantes de inglés a nivel global también fomenta 
+    relaciones personales y profesionales en un mundo cada vez más interconectado.
+
+    En última instancia, aprender inglés no solo es una habilidad, sino una puerta que se abre a nuevas oportunidades, 
+    experiencias y conexiones en un entorno globalizado.
+  </p>
 </div>
+
+
+<div class=" d-flex justify-content-center ">
+    <div class="div d-flex justify-content-center me-4" >
+    <a class="btn btn-primary" (click)="txtboton()">{{texto}}</a>
+    </div>
+    <div class="div d-flex justify-content-center" >
+      <a class="btn btn-primary" (click)="txtbtnnew()">{{txtbtnbew}}</a>
+    </div>
+
+</div>
+<br>
+
+<div>
+  <app-cursos *ngIf="estadobotoncursos"></app-cursos>
+
+</div>
+
+  <div>
+    <app-agregarcurso *ngIf="estadobotonNewcursos"></app-agregarcurso>
+  
+  </div>
+
+

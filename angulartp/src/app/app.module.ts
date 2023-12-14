@@ -8,6 +8,7 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { PiepaginaComponent } from './piepagina/piepagina.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AgregarcursoComponent } from './agregarcurso/agregarcurso.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EncabezadoComponent,
     PiepaginaComponent,
     CursosComponent,
+    AgregarcursoComponent,
     
     
   ],

@@ -1,0 +1,23 @@
+
+
+<div class="card carnewcurso mb-5">
+    <h3>Agregar curso</h3>
+    <form (ngSubmit)="agregarcurso()">
+        <label for="text">Nombre del curso:</label>
+        <input type="text" id="text" class="form-control" placeholder="Ingrese en nombre del curso" name="cursos" [(ngModel)]="cursos.name">
+
+        <label for="text">Nombre el id:</label>
+        <input type="text" id="text" class="form-control" placeholder="Ingrese el ID" name="cursos" [(ngModel)]="cursos.id">
+
+        <label for="text">Nombre una descripción:</label>
+        <input type="text" id="text" class="form-control" placeholder="Ingrese una descripción" name="cursos" [(ngModel)]="cursos.description">
+
+        <label for="text">Nombre la duración:</label>
+        <input type="text" id="text" class="form-control" placeholder="Ingrese la duración" name="cursos" [(ngModel)]="cursos.duration">
+
+        <button class="btn btn-primary m-2">
+            Agregar curso
+        </button> 
+     </form>
+</div>
+
