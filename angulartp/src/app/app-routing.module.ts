@@ -8,6 +8,7 @@ import { AgregarcursoComponent } from './agregarcurso/agregarcurso.component';
 const routes: Routes = [
   {path: 'cursos', component:CursosComponent},
   {path: 'agregarcurso', component:AgregarcursoComponent },
+  {path: 'inicio', component: InicioComponent},
   {path:'**', pathMatch:'full', redirectTo: 'inicio'}
 
 ];
